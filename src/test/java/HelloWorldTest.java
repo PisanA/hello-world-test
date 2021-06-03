@@ -26,6 +26,44 @@ public class HelloWorldTest {
 			    ,"Hello, World!", outputStreamCaptor.toString());
 	}
 	
+	@Test
+	public void testpPrintStarPiramidMethod() {
+    	HelloWorld.printStarPiramid();
+        
+    	Assert.assertEquals( "The printStarPiramid() method should print out \n" +
+			    "\"    *\"\n" +
+        		    "\"   ***\"\n" +
+         		    "\"  *****\"\n" +
+        		    "\" *******\"\n" +
+        		    "\"*********\"\n \nCheck carefully! " +
+			    "One missing/extra character like space can make this test case failed\n",
+			    "    *\n" +
+        		    "   ***\n" +
+         		    "  *****\n" +
+        		    " *******\n" +
+        		    "*********\n"
+			    ,outputStreamCaptor.toString());
+	}
+	
+	@Test
+	public void testPrintFaceMethod() {
+    	HelloWorld.printFace();
+        
+    	Assert.assertEquals( "The printFace() method should print out \n" +
+			    "\" +\"\"\"\"\"+ \"\n" +
+        		    "\"[| o o |]\"\n" +
+         		    "\" |  ^  | \"\n" +
+        		    "\" | '-' | \"\n" +
+        		    "\" +-----+ \"\n \nCheck carefully! " +
+			    "One missing/extra character like space can make this test case failed\n",
+			   " +\"\"\"\"\"+ \n" +
+        		   "[| o o |]\n" +
+         		   " |  ^  | \n" +
+        		   " | '-' | \n" +
+        		   " +-----+ \n"
+			    , outputStreamCaptor.toString());
+	}
+	
 	
 	@After
 	public void tearDown() {
