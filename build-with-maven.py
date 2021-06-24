@@ -33,7 +33,7 @@ with open("out/report.txt", "w") as fp:
     fp.write("Report generated on " + dt_string + "\n")
     fp.write("==============================================\n")
 
-    resultFile = "hello-world-intro/hello-world-test/target/surefire-reports/HelloWorldTest.txt"
+    resultFile = "target/surefire-reports/HelloWorldTest.txt"
     if os.path.isfile(resultFile):
         # copy contents
         with open(resultFile) as inFile:
