@@ -17,7 +17,7 @@ def echoAndRun(cmd):
     os.system(cmd)
 
 
-echoAndRun("cp HelloWorld.java hello-world-test/src/main/java")
+#echoAndRun("cp HelloWorld.java hello-world-test/src/main/java")
 echoAndRun("cd hello-world-test; mvn clean compile test --quiet --no-transfer-progress --batch-mode --fail-never")
 
 os.makedirs("out", exist_ok=True)
