@@ -19,10 +19,14 @@ def echoAndRun(cmd):
 
 echoAndRun("rm -rf hello-world-test")
 
-echoAndRun("git clone --quiet https://github.com/pisanA/hello-world-test.git")
+echoAndRun("git clone --quiet https://github.com/PisanA/hello-world-test.git")
 
 echoAndRun("rm -rf hello-world-test/target")
+echoAndRun("ls -al")
+echoAndRun("cd ..")
+echoAndRun("ls -al")
 echoAndRun("cp HelloWorld.java hello-world-test/src/main/java")
+echoAndRun("ls -al")
 echoAndRun("cd hello-world-test; mvn clean compile test --quiet --no-transfer-progress --batch-mode --fail-never")
 
 
