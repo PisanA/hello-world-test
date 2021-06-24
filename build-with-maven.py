@@ -22,6 +22,8 @@ echoAndRun("cd hello-world-test; mvn clean compile test --quiet --no-transfer-pr
 
 os.makedirs("out", exist_ok=True)
 
+echoAndRun("ls -lR")
+
 with open("out/report.txt", "w") as fp:
     # datetime object containing current date and time
     now = datetime.now()
