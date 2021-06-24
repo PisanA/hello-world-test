@@ -19,7 +19,7 @@ def echoAndRun(cmd):
 
 echoAndRun("rm -rf hello-world-test")
 
-echoAndRun("git clone --quiet https://github.com/junk33/hello-world-test.git")
+echoAndRun("git clone --quiet https://github.com/pisanA/hello-world-test.git")
 
 echoAndRun("rm -rf hello-world-test/target")
 echoAndRun("cp HelloWorld.java hello-world-test/src/main/java")
