@@ -25,7 +25,7 @@ public class HelloWorldTest {
 			    + "One missing/extra character like a space can fail this test case\n"
 			    ,"Hello, World!\n", outputStreamCaptor.toString());
 	}
-	
+	/*
 	@Test
 	public void testpPrintStarPiramidMethod() {
     	HelloWorld.printStarPiramid();
@@ -64,7 +64,7 @@ public class HelloWorldTest {
 			    , outputStreamCaptor.toString());
 	}
 	
-	
+	*/
 	@After
 	public void tearDown() {
     	System.setOut(standardOut);
